@@ -1,4 +1,4 @@
-// Hallmark Furniture — shared behaviour
+// Hallmark Furnitures — shared behaviour
 
 document.addEventListener("DOMContentLoaded", function () {
   setupNavToggle();
