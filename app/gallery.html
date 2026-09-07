@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery — Hallmark Furniture</title>
+  <meta name="description" content="Browse Hallmark Furniture's living room, bedroom, dining and office pieces. Filter by room and inquire directly for pricing." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="brand">Hallmark Furniture</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="social-links">
+        <a href="https://www.tiktok.com/@hallmarkfurniture" target="_blank" rel="noopener" aria-label="Hallmark Furniture on TikTok">
+          <svg viewBox="0 0 24 24"><path d="M16.6 5.82c-1.02-.9-1.62-2.18-1.62-3.6h-3.2v14.24a2.6 2.6 0 1 1-2.6-2.6c.24 0 .48.03.7.09V10.8a5.8 5.8 0 1 0 5.1 5.76V9.5a8.15 8.15 0 0 0 4.62 1.44v-3.2a4.98 4.98 0 0 1-3-1.92z"/></svg>
+        </a>
+        <a href="https://www.facebook.com/hallmarkfurniture" target="_blank" rel="noopener" aria-label="Hallmark Furniture on Facebook">
+          <svg viewBox="0 0 24 24"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.78-3.89 1.1 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z"/></svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="page-hero page-hero-gallery">
+      <div class="container">
+        <h1>Gallery</h1>
+        <p>Every piece here is available in-store on Ruaka Road. Filter by room, then tap Inquire for pricing and stock.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+
+        <div class="filter-bar">
+          <button class="filter-btn" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="living-room">Living Room</button>
+          <button class="filter-btn" data-filter="bedroom">Bedroom</button>
+          <button class="filter-btn" data-filter="dining">Dining</button>
+          <button class="filter-btn" data-filter="office">Office</button>
+        </div>
+
+        <div class="grid">
+
+          <article class="card" data-category="living-room">
+            <img class="img-placeholder" src="images/chesterfield-sofa.jpg" alt="Brown leather Chesterfield sofa" loading="lazy" width="400" height="300" />
+            <div class="card-body">
+              <span class="badge">Living Room</span>
+              <h3>Chesterfield Sofa</h3>
+              <p>Tufted 3-seater upholstered sofa, sturdy hardwood frame. 200 x 90 x 85 cm.</p>
+              <a href="contact.html?item=Chesterfield%20Sofa" class="btn btn-outline">Inquire</a>
+            </div>
+          </article>
+
+          <article class="card" data-category="living-room">
+            <img class="img-placeholder" src="images/coffee-table.jpg" alt="Living room with a coffee table and bookshelf" loading="lazy" width="400" height="300" />
+            <div class="card-body">
+              <span class="badge">Living Room</span>
+              <h3>Reclaimed Wood Coffee Table</h3>
+              <p>Rustic-finish coffee table with iron accents. 110 x 55 x 45 cm.</p>
+              <a href="contact.html?item=Reclaimed%20Wood%20Coffee%20Table" class="btn btn-outline">Inquire</a>
+            </div>
+          </article>
+
+          <article class="card" data-category="living-room">
+            <img class="img-placeholder" src="images/tv-stand.jpg" alt="Wooden TV stand in a living room" loading="lazy" width="400" height="300" />
+            <div class="card-body">
+              <span class="badge">Living Room</span>
+              <h3>Media TV Stand</h3>
+              <p>Wall-mount style stand with closed storage, fits up to 55" TVs.</p>
+              <a href="contact.html?item=Media%20TV%20Stand" class="btn btn-outline">Inquire</a>
+            </div>
+          </article>
+
+          <article class="card" data-category="bedroom">
+            <img class="img-placeholder" src="images/bed-frame.jpg" alt="Bed frame in a bedroom" loading="lazy" width="400" height="300" />
+            <div class="card-body">
+              <span class="badge">Bedroom</span>
+              <h3>Storage Bed Frame</h3>
+              <p>Queen-size frame with built-in under-bed drawers. 160 x 200 cm.</p>
+              <a href="contact.html?item=Storage%20Bed%20Frame" class="btn btn-outline">Inquire</a>
+            </div>
+          </article>
+
+          <article class="card" data-category="bedroom">
+            <img class="img-placeholder" src="images/wardrobe.jpg" alt="Bedroom with a wardrobe and mirror" loading="lazy" width="400" height="300" />
+            <div class="card-body">
+              <span class="badge">Bedroom</span>
+              <h3>3-Door Wardrobe</h3>
+              <p>Spacious wardrobe with mirror panel and shelving. 150 x 55 x 200 cm.</p>
+              <a href="contact.html?item=3-Door%20Wardrobe" class="btn btn-outline">Inquire</a>
+            </div>
+          </article>
+
+          <article class="card" data-category="bedroom">
+            <img class="img-placeholder" src="images/nightstand.jpg" alt="Table lamp on a wooden nightstand beside a bed" loading="lazy" width="400" height="300" />
+            <div class="card-body">
+              <span class="badge">Bedroom</span>
+              <h3>Bedside Nightstand</h3>
+              <p>Compact two-drawer nightstand, matches the storage bed frame.</p>
+              <a href="contact.html?item=Bedside%20Nightstand" class="btn btn-outline">Inquire</a>
+            </div>
+          </article>
+
+          <article class="card" data-category="dining">
+            <img class="img-placeholder" src="images/dining-set.jpg" alt="Wooden dining table with six upholstered chairs" loading="lazy" width="400" height="300" />
+            <div class="card-body">
+              <span class="badge">Dining</span>
+              <h3>Oak Dining Set (6-Seater)</h3>
+              <p>Solid oak table with matching upholstered chairs. Table 180 x 90 cm.</p>
+              <a href="contact.html?item=Oak%20Dining%20Set" class="btn btn-outline">Inquire</a>
+            </div>
+          </article>
+
+          <article class="card" data-category="dining">
+            <img class="img-placeholder" src="images/dining-bench.jpg" alt="Dining room with a rustic wooden table and bench" loading="lazy" width="400" height="300" />
+            <div class="card-body">
+              <span class="badge">Dining</span>
+              <h3>Solid Wood Dining Bench</h3>
+              <p>Seats three, pairs well with the Oak Dining Set. 150 x 35 x 45 cm.</p>
+              <a href="contact.html?item=Solid%20Wood%20Dining%20Bench" class="btn btn-outline">Inquire</a>
+            </div>
+          </article>
+
+          <article class="card" data-category="office">
+            <img class="img-placeholder" src="images/executive-desk.jpg" alt="Wooden desk with a computer on top" loading="lazy" width="400" height="300" />
+            <div class="card-body">
+              <span class="badge">Office</span>
+              <h3>Executive Desk</h3>
+              <p>Spacious wooden desk with cable management and drawers. 140 x 70 x 75 cm.</p>
+              <a href="contact.html?item=Executive%20Desk" class="btn btn-outline">Inquire</a>
+            </div>
+          </article>
+
+          <article class="card" data-category="office">
+            <img class="img-placeholder" src="images/office-chair.jpg" alt="Gray ergonomic office chair beside a wooden table" loading="lazy" width="400" height="300" />
+            <div class="card-body">
+              <span class="badge">Office</span>
+              <h3>Ergonomic Office Chair</h3>
+              <p>Adjustable height and lumbar support, breathable mesh back.</p>
+              <a href="contact.html?item=Ergonomic%20Office%20Chair" class="btn btn-outline">Inquire</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>Hallmark Furniture</h3>
+        <p>Ruaka Road, opposite Foresight Academy<br />Nairobi, Kenya</p>
+      </div>
+      <div>
+        <h3>Quick Links</h3>
+        <ul class="footer-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <p><a href="tel:+254700000000">+254 700 000 000</a></p>
+        <p>Mon–Sat: 8:00 AM – 6:00 PM</p>
+      </div>
+      <div>
+        <h3>Follow Us</h3>
+        <p>
+          <a href="https://www.tiktok.com/@hallmarkfurniture" target="_blank" rel="noopener">TikTok</a><br />
+          <a href="https://www.facebook.com/hallmarkfurniture" target="_blank" rel="noopener">Facebook</a>
+        </p>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      &copy; <span id="year"></span> Hallmark Furniture. All rights reserved.
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
