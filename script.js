@@ -13,15 +13,20 @@ function setupNavToggle() {
   var nav = document.querySelector(".site-nav");
   if (!toggle || !nav) return;
 
-  toggle.addEventListener("click", function () {
-    var isOpen = nav.classList.toggle("open");
+  function setOpen(isOpen) {
+    nav.classList.toggle("open", isOpen);
     toggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+    toggle.setAttribute("aria-label", isOpen ? "Close menu" : "Toggle menu");
+    toggle.innerHTML = isOpen ? "&times;" : "&#9776;";
+  }
+
+  toggle.addEventListener("click", function () {
+    setOpen(!nav.classList.contains("open"));
   });
 
   nav.querySelectorAll("a").forEach(function (link) {
     link.addEventListener("click", function () {
-      nav.classList.remove("open");
-      toggle.setAttribute("aria-expanded", "false");
+      setOpen(false);
     });
   });
 }

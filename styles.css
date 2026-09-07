@@ -167,10 +167,15 @@ p {
 
 .nav-toggle {
   display: none;
+  align-items: center;
+  justify-content: center;
   background: none;
   border: 1px solid var(--color-border);
   border-radius: var(--radius);
   font-size: 1.25rem;
+  line-height: 1;
+  min-width: 2.25rem;
+  min-height: 2.25rem;
   padding: 0.35rem 0.6rem;
   cursor: pointer;
 }
@@ -590,7 +595,7 @@ p {
 
 @media (max-width: 700px) {
   .nav-toggle {
-    display: block;
+    display: flex;
   }
 
   .site-nav {
